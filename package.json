@@ -1,0 +1,27 @@
+{
+  "name": "workout-break",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager . coach_carter --platform=win32 --arch=x64 --overwrite --icon=coach-carter.ico"
+  },
+  "keywords": [],
+  "author": "Geva Jacob",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-packager": "^17.1.1"
+  },
+  "build": {
+    "appId": "com.electron.app",
+    "win": {
+      "target": "portable"
+    },
+    "portable": {
+      "unicode": false,
+      "artifactName": "coach_carter.exe"
+    }
+  }
+}
