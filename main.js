@@ -1,5 +1,6 @@
 const { app, BrowserWindow, Tray, Menu, Notification } = require('electron');
 const path = require('path');
+const quotes = require('./quotes.js');
 var timeRemaining;
 var tray = null;
 
@@ -47,9 +48,10 @@ const createWindow = () => {
   });
 
   function showPushupNotification() {
+    const quote = quotes[Math.floor(Math.random() * quotes.length)];
     const notification = new Notification({
-      title: 'Push ups now',
-      body: 'Do It!',
+      title: 'Push ups now - Do It!',
+      body: quote,
       icon: path.join(__dirname, 'coach-carter.png'),
       silent: true,
       buttons: [
