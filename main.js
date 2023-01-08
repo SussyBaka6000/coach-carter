@@ -30,6 +30,14 @@ const createWindow = () => {
     tray = new Tray(path.join(__dirname, 'coach-carter.ico'));
     const contextMenu = Menu.buildFromTemplate([
       {
+        label: 'Restart',
+        click: function () {
+          app.relaunch();
+          app.exit();
+          console.log('Restarting timer');
+        },
+      },
+      {
         label: 'Show App',
         click: function () {
           win.show();
