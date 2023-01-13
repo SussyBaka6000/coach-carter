@@ -24,6 +24,7 @@ const quotes = [
   '“There is no joy without pain.”',
   '“Don’t listen to the advice of people who are living lives you don’t want to live.”',
   '“You are never going to have any of the things you… Nobody cares about you enough to do it for you.”',
+  "Don't look back your'e not going that way!"
 ];
 
 module.exports = quotes;
