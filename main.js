@@ -88,7 +88,7 @@ const createWindow = () => {
   }
 
   function startTimer() {
-    const duration = 30 * 60 * 1000; // 30 minutes in milliseconds
+    const duration = 45 * 60 * 1000; // 45 minutes in milliseconds
     let remainingTime = duration;
 
     const intervalId = setInterval(() => {
